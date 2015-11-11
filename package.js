@@ -14,12 +14,12 @@ var C = 'client';
 var S = 'server';
 var CS = [C, S];
 
+Npm.depends({
+  "node-gcm": "0.12.0"
+});
+
 Package.onUse(function(api) {
   api.versionsFrom('1.2.0.1');
-
-  Npm.depends({
-    "node-gcm": "0.12.0"
-  });
 
   api.addFiles('lib/tapfuse-node-gcm.js', S);
   api.export('GCM', S);
