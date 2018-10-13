@@ -1,1 +1,1 @@
-Wrapper for node-gcm
+Package is no longer maintaned.
